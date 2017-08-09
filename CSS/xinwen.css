@@ -1,0 +1,165 @@
+.top {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px
+}
+.top li {
+	width: 120px;
+	border-radius: 5px;
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+	border: 1px solid gray;
+	box-shadow: 0px 2px 10px #ccc;
+	text-align: center;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.top li:hover {
+	color: white;
+	background: gray;
+}
+.xinwenliebiao {
+	width: 90%;
+	min-height: 200px;
+	overflow: hidden;
+	margin:20px auto;
+}
+.xinwenliebiao a{
+	color: black;
+}
+.shijian {
+	width: 70px;
+	height: 80px;
+	border-radius: 10px;
+	background: #00dfb8;
+	float: left;
+	margin: 0 20px;
+	margin-left: 0;
+}
+.shijian p {
+	width: 100%;
+	height: 50%;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+}
+.shijian>p:nth-child(1){
+	font-size: 24px;
+}
+.xinwenliebiao img {
+	width: 20%;
+	float: left;
+	min-width: 250px;
+}
+.shuoming {
+	width: 60%;
+	float: left;
+	margin-left: 20px;
+}
+.shuoming>p{
+	line-height: 30px;
+}
+.shuoming>p:nth-child(1) {
+	color: #00dfb8;
+	font-size: 20px;
+	font-weight: 600;
+}
+.shuoming>p:nth-child(5){
+	color: #00dfb8;
+}
+.fix{
+	width:60px;
+	height: 200px;
+	position: fixed;
+	bottom: 10%;
+	right: 0;
+	z-index: 40;
+}
+.fix li{
+	width:60px;
+	height:60px;
+	background: rgba(0,0,0,0.7);
+	margin-top:10px;
+	list-style: none;
+	position: relative;
+	z-index: 20;
+}
+.fix li:nth-child(1){
+	margin-top:0;
+}
+.fix li img{
+	width: 50%;
+	position: absolute;
+	margin: auto;
+	left:0;
+	top:0;
+	right:0;
+	bottom: 0;
+}
+.chuxian{
+	width: 150px;
+	background: black;
+	height: 100%;
+	position: absolute;
+	left:160px;
+	z-index: 10;
+	transition: all 0.5s;
+}
+.chuxian p{
+	color:white;
+	line-height: 60px;
+	text-indent: 10px;
+}
+.gao p{
+	line-height: 30px;
+}
+.fix li:hover .chuxian{
+	left: -160px;
+}
+@media only screen and (max-width:1200px ) {
+	.fix{
+		display: none;
+	}
+	.xinwenliebiao{
+		background: white;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		min-height: 100px;
+	}
+	.shuoming{
+		width: 80%;
+	}
+	.shuoming>p,
+	.shijian>p{
+		font-size: 24px;
+	}
+	.shuoming>p:nth-child(1){
+		font-size: 28px;
+	}
+	.shuoming>p:nth-child(4){
+		display: none;
+	}
+	.xinwenliebiao img{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

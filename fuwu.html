@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="CSS/toubu.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/fuwu.css" />
+		<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="JS/daohaodianji.js" ></script>
+	</head>
+	<body>
+		<div class="fuwu">
+			<!--左边网页跳转连接-->
+			<div class="left">
+				<!--LOGO-->
+				<div class="tupian ding">
+					<a href="index.html">
+						<img src='IMG/1.png'>
+					</a>
+				</div>
+				<!--中英文翻译-->
+				<ul>
+					<li>简体中文</li>
+					<li>English</li>
+				</ul>
+				<!--二维码-->
+				<div class="img">
+					<img src='IMG/集团公众号二维码.jpg'>
+				</div>
+				<p>扫一扫关注微信公众号</p>
+				<!--各个链接菜单-->
+				<div class="li">
+					<a href="index.html">
+						<li>网站首页</li>
+					</a>
+					<a href="fuwu.html">
+						<li>集团产业</li>
+					</a>
+					<a href="kehu.html">
+						<li>集团客户</li>
+					</a>
+					<a href="kuangjia.html">
+						<li>关于我们</li>
+					</a>
+					<a href="xinwen.html">
+						<li>最新资讯</li>
+					</a>
+					<a href="xiazai.html">
+						<li>相关下载</li>
+					</a>
+				</div>
+				<!--<p class="dizi">CopyRight 钜成集团有限公司 版权所有 © 2016 All Rights Reserved</p>-->
+			</div>
+			<!--右边内容-->
+			<div class="right">
+				<!--选项-->
+				<div class="top">
+					<li>全部</li>
+					<li>金融</li>
+					<li>仓储</li>
+					<li>房地产</li>
+					<li>汽车金融</li>
+					<li>进出口贸易</li>
+				</div>
+				<!--整体打盒子-->
+				<div class="tuji">
+					<!--每个小盒子    类名为xin-->
+					<div class="xin">
+						<a href="kehuxaingqing.html">
+							<div class="xin_shang">
+								<img src='IMG/fuwuone.png'>
+								<div class="zhezhao">
+									<p>+</p>
+								</div>
+							</div>
+							<div class="xin_xia">
+								<div class="xiangao"></div>
+								<p>上海钜成供应链管理（集团）有限公司</p>
+							</div>
+						</a>
+					</div>
+					<div class="xin">
+						<a href="kehuxaingqing.html">
+							<div class="xin_shang">
+								<img src='IMG/fuwuone.png'>
+								<div class="zhezhao">
+									<p>+</p>
+								</div>
+							</div>
+							<div class="xin_xia">
+								<div class="xiangao"></div>
+								<p>上海钜成供应链管理（集团）有限公司</p>
+							</div>
+						</a>
+					</div>
+					<div class="xin">
+						<a href="kehuxaingqing.html">
+							<div class="xin_shang">
+								<img src='IMG/fuwuone.png'>
+								<div class="zhezhao">
+									<p>+</p>
+								</div>
+							</div>
+							<div class="xin_xia">
+								<div class="xiangao"></div>
+								<p>上海钜成供应链管理（集团）有限公司</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="dixian">
+					<div class="zuodianji"><<</div>
+						<div class="zhongjian">
+							<p><</p>
+							<p>1</p>
+							<p>2</p>
+							<p>></p>
+						</div>
+						<div class="youdianji">>></div>
+					</div>
+				</div>
+			</div>
+			<!--屏幕尺寸小于1200px出现的导航样式-->
+			<div class="nav">
+				<a href="index.html">
+					<img src='IMG/logo.png'>
+				</a>
+				<div class="btn">
+					<div class="caidanhengxain">
+						<div class="huangxian"></div>
+						<div class="huangxian"></div>
+						<div class="huangxian"></div>
+					</div>
+					<div class="xinxi" style="height: 400px;">
+						<li>全部</li>
+						<li>金融</li>
+						<li>棉花</li>
+						<li>房地产</li>
+						<li>催收</li>
+					</div>
+				</div>
+				<div class="zhongying">
+					<li>简体中文</li>
+					<li>English</li>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		//		每一个块的hover事件
+		$('.xin').hover(function() {
+				$('.zhezhao').eq($(this).index()).stop(false, true).slideDown(300)
+				$('.xin_xia p').eq($(this).index()).css('color', 'white')
+				$('.xiangao').eq($(this).index()).stop(false, true).animate({'top': 0,}, 300)
+			}, function() {
+				$('.zhezhao').eq($(this).index()).stop(false, true).slideUp(300)
+				$('.xin_xia p').eq($(this).index()).css('color', 'black')
+				$('.xiangao').eq($(this).index()).stop(false, true).animate({'top': '95%',}, 300)
+			})
+	</script>
+</html>

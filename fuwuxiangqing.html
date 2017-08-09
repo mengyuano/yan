@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="CSS/toubu.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/fuwuxiangqing.css" />
+		<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="JS/daohaodianji.js" ></script>
+	</head>
+
+	<body>
+		<div class="fuwu">
+			<!--左边网页跳转连接-->
+			<div class="left" style="position: fixed;">
+				<!--LOGO-->
+				<div class="tupian ding">
+					<a href="index.html">
+						<img src='IMG/1.png'>
+					</a>
+				</div>
+				<!--中英文翻译-->
+				<ul>
+					<li>简体中文</li>
+					<li>English</li>
+				</ul>
+				<!--二维码-->
+				<div class="img">
+					<a href="index.html">
+						<img src='IMG/集团公众号二维码.jpg'>
+					</a>
+				</div>
+				<p>微信扫一扫二维码</p>
+				<!--各个链接菜单-->
+				<div class="li">
+					<a href="index.html">
+						<li>网站首页</li>
+					</a>
+					<a href="fuwu.html">
+						<li>集团产业</li>
+					</a>
+					<a href="kehu.html">
+						<li>集团客户</li>
+					</a>
+					<a href="kuangjia.html">
+						<li>关于我们</li>
+					</a>
+					<a href="xinwen.html">
+						<li>最新资讯</li>
+					</a>
+					<a href="xiazai.html">
+						<li>相关下载</li>
+					</a>
+				</div>
+			</div>
+			<!--右边内容-->
+			<div class="right">
+				<!--选项-->
+				<div class="xiding">
+					<div class="top">
+						<li>简历</li>
+						<li>公司业务</li>
+						<li>联系我们</li>
+					</div>
+				</div>
+				<div class="shaixuan">
+					<li>最新资讯</li>
+					<li>←</li>
+					<li>→</li>
+				</div>
+				<div class="biaoti">
+					简介
+				</div>
+				<div class="wenzi">
+					劳动纪律撒肯德基卡萨丁卡拉是电费卡时间的回复看撒娇东方航空撒娇的话费卡时间段凤凰卡时间段划分空间撒大黄蜂
+				</div>
+				<div class="biaoti">
+					公司业务
+				</div>
+				<div class="wenzi">
+					<p>劳动纪律撒肯德基卡萨丁卡拉是电费卡时间的回复看撒娇东方航空撒娇的话费卡时间段凤凰卡时间段划分空间撒大黄蜂</p>
+					<img src="IMG/fuwufour.png">
+				</div>
+				<div class="biaoti">
+					联系我们
+				</div>
+				<div class="wenzi">
+					劳动纪律撒肯德基卡萨丁卡拉是电费卡时间的回复看撒娇东方航空撒娇的话费卡时间段凤凰卡时间段划分空间撒大黄蜂
+				</div>
+			</div>
+		</div>
+		
+		<!--屏幕尺寸小于1200px出现的导航样式-->
+		<div class="nav">
+			<a href="index.html">
+				<img src="IMG/logo.png">
+			</a>
+			<div class="btn">
+				<div class="caidanhengxain">
+					<div class="huangxian"></div>
+					<div class="huangxian"></div>
+					<div class="huangxian"></div>
+				</div>
+				<div class="xinxi">
+					<li>全部</li>
+					<li>企业动态</li>
+					<li>行业动态</li>
+					<li>公益活动</li>
+				</div>
+			</div>
+			<div class="zhongying">
+				<li>简体中文</li>
+				<li>English</li>
+			</div>
+		</div>
+	</body>
+	<script>
+		//		选项点击事件
+		$('.top li').click(function() {
+				var u = $('.biaoti').eq($(this).index()).offset().top;
+				$('body,document').animate({scrollTop: u - 70,}, 300);
+			})
+			//		屏幕变小导航点击事件
+		$('.xinxi li').click(function() {
+				var u = $('.biaoti').eq($(this).index()-6).offset().top;
+				$('body,document').animate({scrollTop: u - 90,}, 300);
+			})
+			//		吸顶效果
+		var tt = $(".top").offset().top;
+		$(document).scroll(function() {
+			var tops = $(this).scrollTop();
+			if(tops >= tt) {
+				$(".top").addClass("fix").css('z-index', '1');
+			} else {
+				$(".top").removeClass("fix");
+			}
+		})
+	</script>
+
+</html>

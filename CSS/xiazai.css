@@ -1,0 +1,153 @@
+.ju{
+	width: 90%;
+	background: white;
+	min-height: 70px;
+	margin:50px auto;
+}
+.liebiao{
+	width:100%;
+	min-height: 70px;
+	border-bottom: 5px solid #eff2f4;
+	box-sizing: border-box;
+}
+.xuhao{
+	float: left;
+	width: 50px;
+	height: 40px;
+	background: #00dfb8;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	margin:15px;
+	color: white;
+}
+.liebiao>a{
+	width:40%;
+	float: left;
+	color: black;
+	margin-top: 15px;
+}
+.liebiao>span{
+	float: right;
+	line-height: 70px;
+	margin-right: 50px;
+	color:gray;
+}
+.tubiao{
+	width:260px;
+	float: right;
+	margin-left: 5%;
+	height:70px;
+}
+.zuo{
+	width: 100px;
+	height: 100%;
+	float: left;
+	position: relative;
+	margin-left:20px;
+}
+.zuo:nth-child(1){
+	margin-left: 0;
+}
+.limian{
+	width:100px;
+	height: 60%;
+	background: #00dfb8;
+	border-radius: 5px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+}
+.limian img{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+}
+.limian p{
+	line-height: 40px;
+	text-align: center;
+	transform: translateX(10px);
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	color: white;
+}
+/*小于1200px 出现的导航栏*/
+@media only screen and (max-width:1300px) {
+	.liebiao{
+		height: 150px;
+	}
+	.liebiao:nth-child(1){
+		margin-top:90px;
+	}
+	.tubiao{
+		width: 130px;
+	}
+	.zuo{
+		width: 100%;
+		height: 50%;
+	}
+	.liebiao>span{
+		line-height: 150px;
+	}
+	.zuo:nth-child(2){
+		margin-left: 0;
+	}
+	.tubiao{
+		height: 100%;
+	}
+	.liebiao>a{
+		font-size: 24px;
+	}
+	.limian>p{
+		font-size: 24px;
+	}
+	.limian>img{
+		transform: translateX(-130%);
+		-webkit-transform: translateX(-130%);
+		-moz-transform: translateX(-130%);
+		-ms-transform: translateX(-130%);
+	}
+	.limian>p{
+		transform: translateX(15px);
+		-webkit-transform: translateX(15px);
+		-moz-transform: translateX(15px);
+		-ms-transform: translateX(15px);
+		}
+	.liebiao>span{
+		font-size: 24px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

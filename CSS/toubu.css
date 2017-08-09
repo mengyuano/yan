@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+body,html{
+	width:100%;
+	height:100%;
+	background: #eff2f4;
+}
+/*左边跳转链接*/
+.fuwu{
+	width: 100%;
+	overflow: hidden;
+}
+.left {
+	width: 20%;
+	background: white;
+	float: left;
+	position: fixed;
+	height: 100%;
+}
+.left ul {
+	width: 60%;
+	height: 50px;
+	margin: 10px 20%;
+}
+
+.left ul li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 50px;
+	list-style: none;
+	font-weight: 600;
+}
+.left>ul>li:nth-child(1){
+	color:#00dfb8;
+}
+.right {
+	width: 80%;
+	background: #eff2f4;
+	float: right;
+	position: relative;
+}
+/*LOGO,二维码图片尺寸设置*/
+
+.tupian,
+.img {
+	width: 70%;
+	min-height: 100px;
+	margin: auto;
+	position: relative;
+	margin-top: 20px;
+}
+
+.tupian img,
+.img img {
+	width: 65%;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.img img {
+	width: 50%;
+}
+
+.left p {
+	line-height: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+/*跳转链接*/
+
+.li {
+	width: 50%;
+	margin: auto;
+	line-height: 30px;
+	text-align: center;
+	list-style: none;
+	margin-top: 10px;
+}
+.li li{
+	border-radius: 20px;
+	transition: all 0.3s;
+	margin-top:5px;
+}
+.li li:hover {
+	background: #00dfb8;
+	color: white;
+}
+.li a  {
+	text-decoration: none;
+	color: black;
+}
+@media only screen and (max-width:1200px) {
+	.left {
+		display: none;
+	}
+	.right {
+		width: 100%;
+	}
+}
+
+.nav {
+	width: 100%;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	display: none;
+}
+
+.nav img {
+	height: 70%;
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	float: left;
+}
+.zhongying{
+	float: right;
+	width: 230px;
+	height: 70px;
+	margin-right: 20px;
+}
+.zhongying>li{
+	width: 90px;
+	line-height: 70px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+	color: white;
+}
+.zhongying>li:nth-child(1){
+	color: #00DFB8;
+	margin-left:0;
+	width: 120px;
+}
+.btn {
+	width: 150px;
+	height: 100%;
+	position: relative;
+	margin-right: 30px;
+	float: right;
+	z-index: 300;
+}
+/*导航点击样式*/
+.caidanhengxain {
+	width: 40px;
+	height: 100%;
+	margin: 100px auto;
+	position: absolute;
+	left: 55px;
+	top: -120%;
+}
+.huangxian {
+	width: 100%;
+	height: 5px;
+	background: #00dfb8;
+	position: absolute;
+	left: 10%;
+	border-radius: 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.huangxian:nth-child(1) {
+	top: 0;
+	transform-origin: left top;
+	-webkit-transform-origin: left top;
+	-moz-transform-origin: left top;
+	-ms-transform-origin: left top;
+}
+.huangxian:nth-child(2) {
+	top: 15px
+}
+.huangxian:nth-child(3) {
+	top: 30px;
+	transform-origin: left bottom;
+	-webkit-transform-origin: left bottom;
+	-moz-transform-origin: left bottom;
+	-ms-transform-origin: left bottom;
+}
+.xinxi {
+	width: 100%;
+	height: 320px;
+	background: #eff2f4;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	border-radius:20px;
+	box-shadow: 0px 2px 10px #ccc;
+}
+.xinxi li {
+	width: 100%;
+	line-height: 80px;
+	list-style: none;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+.xinxi li a {
+	text-decoration: none;
+	color: white;
+}
+.dixian {
+	width: 90%;
+	height: 100px;
+	border-top: 1px solid black;
+	padding-top: 20px;
+	box-sizing: border-box;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+.youdianji,
+.zuodianji,
+.zhongjian p {
+	width: 40px;
+	height: 30px;
+	border: 1px solid gray;
+	float: left;
+	margin-left: 10px;
+	background: white;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.zuodianji{
+	margin-left: 0;
+}
+.zhongjian p {
+	float: left;
+}
+
+.youdianji:hover,
+.zuodianji:hover,
+.zhongjian p:hover {
+	background: -webkit-linear-gradient(top, white, #ddd);
+	background: -ms-linear-gradient(top, white, #ddd);
+	background: -moz-linear-gradient(top, white, #ddd);
+	background: linear-gradient(top, white, #ddd);
+}
+
+.dizi {
+	position: absolute;
+	bottom: 20px;
+	width: 90%;
+	left: 5%;
+	color: gray;
+	line-height: 0;
+}
+.xinxi li:hover{
+	color: #00dfb8;
+}
+.xinxi a:hover{
+	color: #00dfb8;
+}
+@media only screen and (max-width:1200px) {
+	.nav {
+		display: block;
+	}
+	.top {
+		display: none;
+	}
+	.xinwenliebiao:nth-child(2) {
+		margin-top: 80px;
+	}
+	.youdianji,
+	.zuodianji,
+	.zhongjian p{
+		width: 50px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 24px;
+	}
+}

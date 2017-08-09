@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="CSS/swiper.min.css" />
+		<link rel="stylesheet" href="CSS/animate.min.css" />
+		<link rel="stylesheet" href="CSS/index.css" />
+		<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+		<style>
+			/*bei为每一竖屛的背景图片*/
+			/*jing为每一横屛的背景图片*/
+			/*.jing:nth-child(1){
+				background:url(IMG/首页_03.png);
+			}
+			.jing:nth-child(2){
+				background:url(IMG/首页_01.png);
+			}
+			.jing:nth-child(3){
+				background:url(IMG/首页_05.png);
+			}
+			.jing:nth-child(4){
+				background: url(IMG/首页_07.png);
+			}
+			.bei:nth-child(2) {
+				background:url(IMG/服务大图_05.png);
+			}
+			.bei:nth-child(3) {
+				background: url(IMG/服务大图_03.png);
+			}
+			.bei:nth-child(4) {
+				background:  url(IMG/服务大图_01.png);
+			}
+			.bei:nth-child(5) {
+				background: url(IMG/guanyu.png);
+			}
+			.bei:nth-child(6) {
+				background:url(IMG/服务大图_07.png);
+			}
+			.jing:nth-child(1),
+			.jing:nth-child(2),
+			.jing:nth-child(3),
+			.jing:nth-child(4),
+			.bei:nth-child(2),
+			.bei:nth-child(3),
+			.bei:nth-child(4),
+			.bei:nth-child(5),
+			.bei:nth-child(6){
+				background-repeat:no-repeat;
+				background-position:top center ;
+				background-size:1920px 100%;
+			}*/
+			.od{
+				background-repeat:no-repeat;
+				background-position:top center ;
+				background-size:1920px 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 第一个导航栏   1200px以上显示 -->
+		<div class="ding">
+			<div class="zhong">
+				<img src="IMG/logo.png">
+				<div class="xian">
+					<div class="duan" style="background: #00dfb8;"></div>
+					<div class="duan"></div>
+					<div class="duan"></div>
+					<div class="duan"></div>
+					<div class="duan"></div>
+					<div class="duan"></div>
+				</div>
+				<ul>
+					<li style="color: #00DFB8;">首页</li>
+					<li>服务</li>
+					<li>客户</li>
+					<li>合作</li>
+					<li>关于</li>
+					<li>联系</li>
+					<li>
+						<a href="xinwen.html">资讯</a>
+					</li>
+					<li>
+						<a href="xiazai.html">下载</a>
+					</li>
+				</ul>
+			</div>
+			<ul>
+				<li>简体中文</li>
+				<li>English</li>
+			</ul>
+		</div>
+		<!--第二个导航栏   1200px以下显示-->
+		<div class="ding">
+			<img src='IMG/logo.png'>
+			<div class="right">
+				<div class="caidanhengxain">
+					<div class="huangxian"></div>
+					<div class="huangxian"></div>
+					<div class="huangxian"></div>
+				</div>
+				<div class="nav">
+					<li>首页</li>
+					<li>服务</li>
+					<li>客户</li>
+					<li>合作</li>
+					<li>关于</li>
+					<li>联系</li>
+					<li>
+						<a href="xinwen.html">资讯</a>
+					</li>
+					<li>
+						<a href="xiazai.html">下载</a>
+					</li>
+				</div>
+			</div>
+			<div class="fanyi">
+				<li>简体中文</li>
+				<li>English</li>
+			</div>
+		</div>
+		<div class="fix">
+			<li><img src="IMG/shang.png"></li>
+			<li class="zuoyi">
+				<img src="IMG/QQ.png">
+				<div class="chuxian">QQ：8124178234</div>
+			</li>
+			<li class="zuoyi">
+				<img src="IMG/weixin.png">
+				<div class="chuxian">
+					<img src="IMG/集团公众号二维码.jpg">
+				</div>
+			</li>
+			<li class="zuoyi">
+				<img src="IMG/dianhua.png">
+				<div class="chuxian">微信：123879812341</div>
+			</li>
+			<li><img class="xuanzhuan" src="IMG/shang.png"></li>
+		</div>
+		<div class="chahao">+</div>
+		<div class="swiper-container swiper-container-v">
+			<div class="swiper-wrapper">
+				<!--第一屛    首页-->
+				<div class="swiper-slide">
+					<!--第一屏里面四个分屏-->
+					<div class="swiper-container swiper-container-h">
+						<div class="swiper-wrapper">
+							<!--第一个-->
+							<div class="swiper-slide jing od" data-original="IMG/首页_03.png">
+								<h1 class="ani d_top1" swiper-animate-effect="bounceInDown">
+									追求卓越质量 创造世界名牌
+								</h1>
+								<div class="ani d_left2" swiper-animate-effect="bounceInLeft">
+									<li>踏实</li>
+									<li>拼搏</li>
+									<li>责任</li>
+									<li>诚信</li>
+									<li>卓越</li>
+									<li>合作</li>
+									<li>共赢</li>
+								</div>
+							</div>
+							<!--第二个-->
+							<div class="swiper-slide jing od" data-original="IMG/首页_01.png">
+								<h1 class="ani d_top1" swiper-animate-effect="bounceInUp">钜成集团</h1>
+								<p class="ani d_top" swiper-animate-duration="1.5s" swiper-animate-effect="bounceInDown">
+									用责任做事，视野决定高度
+								</p>
+								<p class="ani d_top2" swiper-animate-duration="1.5s" swiper-animate-effect="bounceInLeft">
+									钜成 功到自然成
+								</p>
+							</div>
+							<!--第三个-->
+							<div class="swiper-slide jing od" data-original="IMG/首页_05.png">
+								<div class="ani kuai" swiper-animate-effect="bounceInRight"></div>
+								<div class="ani left_hua" swiper-animate-effect="bounceInLeft">
+									<p>以管理求效益，以技术求发展</p>
+									<h1 class="se">上海钜成集团</h1>
+									<p>高瞻远瞩，统筹规划</p>
+									<p>任凭风雨  运筹帷幄  同舟共济  阔步未来</p>
+								</div>
+							</div>
+							<!--第四个-->
+							<div class="swiper-slide jing od" data-original="IMG/首页_07.png">
+								<h1 class="ani d_top1" swiper-animate-effect="bounceInUp">茫茫商海征程路，百舸扬帆争一流！</h1>
+								<p class="ani d_top" swiper-animate-duration="1.5s" swiper-animate-effect="bounceInDown">
+									上海钜成集团
+								</p>
+								<p class="ani d_top2" swiper-animate-duration="1.5s" swiper-animate-effect="bounceInLeft">
+									以智兴企     以人为本
+								</p>
+							</div>
+						</div>
+						<!--分页按钮  可点击-->
+						<div class="swiper-pagination swiper-pagination-h"></div>
+					</div>
+				</div>
+				<!--第二屛    服务-->
+				<div class="swiper-slide bei od" data-original="IMG/服务大图_05.png">
+					<h1 class="ani d_right" swiper-animate-effect="bounceInRight">
+						HOW WE DO?
+					</h1>
+					<p class="ani d_right1" swiper-animate-effect="bounceInRight" swiper-animate-delay="0.3s">
+						用行动定义自己
+					</p>
+					<div class="ani d_left" swiper-animate-effect="bounceInLeft">
+						<!--分为四块     类名为fen_san-->
+						<div class="fen_san">
+							<a href="fuwuxiangqing.html">
+								<!--分为上下两层-->
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<!--下边-->
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="fuwuxiangqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="fuwuxiangqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="fuwuxiangqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--进入全部产业-->
+					<div class="move">
+						<a href="fuwu.html">MOVE</a>
+					</div>
+				</div>
+				<!--第三屛     客户 显示-->
+				<div class="swiper-slide bei od" data-original="IMG/服务大图_03.png">
+					<h1 class="ani d_right" swiper-animate-effect="bounceInRight">
+						OUR INDUSTRY
+					</h1>
+					<p class="ani d_right1" swiper-animate-effect="bounceInRight" swiper-animate-delay="0.3s">
+						部分产业展示
+					</p>
+					<div class="ani d_left lun" swiper-animate-effect="bounceInLeft">
+						<!--分为四块-->  
+						<div class="fen_san">
+							<a href="kehuxaingqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="kehuxaingqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="kehuxaingqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+						<div class="fen_san">
+							<a href="kehuxaingqing.html">
+								<div class="fe_shang">
+									<img src="IMG/1499399436.jpg" />
+									<div class="zhe">
+										<p>+</p>
+									</div>
+								</div>
+								<div class="fe_xia">
+									<p>上海钜成供应链管理（集团）有限公司</p>
+									<div class="yidong"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="move">
+						<a href="kehu.html">MOVE</a>
+					</div>
+				</div>
+				<!--第四屛   银行图片   两行六列-->
+				<div class="swiper-slide bei od" data-original="IMG/服务大图_01.png">
+					<h1 class="ani d_right" swiper-animate-effect="bounceInRight">
+						BUCKLE BANK
+					</h1>
+					<p class="ani d_right1" swiper-animate-effect="bounceInRight" swiper-animate-delay="0.3s">
+						划扣银行
+					</p>
+					<div class="ani d_left yinhang" swiper-animate-effect="bounceInLeft">
+						<!--行命名为fen1  列命名为fen1_wu-->
+						<div class="fen1">
+							<div class="fen1_wu">
+								<img src="IMG/1486352384.jpg">
+								<li>浦发银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486353937.jpg'>
+								<li>广发银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486354422.jpg'>
+								<li>中国银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486356106.jpg'>
+								<li>工商银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486356495.jpg'>
+								<li>华夏银行</li>
+							</div>
+							<div class="fen1_wu" style="border:none">
+								<img src='IMG/1486356540.jpg'>
+								<li>兴业银行</li>
+							</div>
+						</div>
+						<div class="fen1">
+							<div class="fen1_wu">
+								<img src='IMG/1486357355.jpg'>
+								<li>交通银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486357416.jpg'>
+								<li>建设银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486358472.jpg'>
+								<li>招商银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/1486359414.jpg'>
+								<li>平安银行</li>
+							</div>
+							<div class="fen1_wu">
+								<img src='IMG/nongyeyinhang.png'>
+								<li>农业银行</li>
+							</div>
+							<div class="fen1_wu" style="border:none">
+								<img data-original='IMG/yinhang.png'>
+								<li>恒生银行</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第五屛      集团荣誉-->
+				<div class="swiper-slide bei od" data-original="IMG/guanyu.png">
+					<div class="xianshi">
+						<div class="wenben">关于</div>
+						<div class="wenben">历程</div>
+						<div class="wenben">荣誉</div>
+						<a href="kuangjia.html">
+							<div class="wenben">框架</div>
+						</a>
+					</div>
+					<!--共三块     hover显示对应的块内容-->
+					<div class='huan' style="display: block;">
+						<h1 class="ani zhong_right" swiper-animate-effect="bounceInRight">
+							钜成集团
+						</h1>
+						<div class="ani zhong_right1" swiper-animate-effect="bounceInUp" swiper-animate-delay="0.3s">
+							<p>上海钜成供应链管理有限公司成立于2016年，旗下拥有宏硕（上海）投资管理有限公司，宏恺（上海）供应链管理有限公司，上海狮晟金融信息服务有限公司、江苏钜兴信息咨询有限公司四家子公司。</p>
+							<p>科学严谨的管理确保了企业的良好运营。</p>
+							<p>下一秒，让你看到我们有多强</p>
+						</div>
+					</div>
+					<div class='huan'>
+						<h1 class="ani zhong_right" swiper-animate-effect="bounceInRight">
+							发展历程
+						</h1>
+						<div class="ani zhong_right1" swiper-animate-effect="bounceInUp" swiper-animate-delay="0.3s">
+							<p>宏硕（上海）投资管理有限公司，承担着二手车买卖的服务工作，它的主营业务有三块：不良贷款车辆的处置、代理汽车金融公司违约车款的催收业务、代理汽车金融公司的外包工作。</p>
+							<p>宏恺公司在经营棉花仓储的同时，还开展了平行进口汽车业务，目前已在美国英国等建立了完善的平行进口体系。</p>
+							<p>狮晟公司是与实体结合的汽车金融创新产品，它运用互联网加A的模式，众筹购车，众筹卖车，互联网线上卖车为主、线下卖车为辅。</p>
+							<p>江苏钜兴信息咨询有限公司是一家致力于不良资产处置及不良资产催收工作的专业公司，是专门通过电话、电函及诉讼为金融企业解决不良资产处置等信用管理难题。</p>
+							<p>集团公司总部在上海，在多地设有分公司。经过几年的发展，逐步建立了覆盖长三角地区金融行业的分支机构和业务团队。</p>
+						</div>
+					</div>
+					<div class='huan'>
+						<h1 class="ani zhong_right" swiper-animate-effect="bounceInRight">
+							放下荣誉，放眼未来
+						</h1>
+						<div class="ani zhong_right1" swiper-animate-effect="bounceInUp" swiper-animate-delay="0.3s">
+							<p>首先形成“联金融夺市场”、“搞服务找市场”、“放贷款扩市场”一条龙营销模式。</p>
+							<p>其次利用互联网+A的高新技术，成为互联网加汽车的开拓者，金融加大数据的参与者</p>
+							<p>公司旗下的宏恺（上海）供应链管理有限公司是上海自贸区唯一的“全国棉花交易保税交割制定仓库”、上海市棉花交易制定仓库、上海和联制定交货库。</p>
+							<p>除此之外，企业还制定了“汽车销售价格委员会”、车辆出售制度、销售奖励办法等制度，通过了QS9000质量认证。</p>
+						</div>
+					</div>
+				</div>
+				<!--第六屛      底部信息-->
+				<div class="swiper-slide bei od" data-original="IMG/服务大图_07.png">
+					<div class="ani juzhong" swiper-animate-effect="bounceInUp" swiper-animate-delay="0.3s">
+						<div class="erweima">
+						<!--大屏时显示在左边    小屏时显示在上面      二维码-->
+							<div class="ani di_left" swiper-animate-effect="bounceLeft">
+								<img src="IMG/集团公众号二维码.jpg">
+							</div>
+							<!--右边信息-->
+							<div class="di_right">
+								<p>021-68931510</p>
+								<li>上海钜成供应链管理（集团）有限公司</li>
+								<li>邮箱：jucheng@shanghaijucheng.com</li>
+								<li>地址：上海市浦东新区东书房路432号</li>
+								<li>邮编：200123</li>
+							</div>
+						</div>
+						<!--底部链接     信息-->
+						<div class="dibuxinxi">
+							<div class="lianjie">
+								<li>友情链接</li>
+								<li>我要好车</li>
+								<li>宏恺的网站</li>
+								<li>车财妙的网站</li>
+							</div>
+							<p>上海钜成供应链管理（集团）有限公司</p>
+							<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-delay="0.6s">沪ICP备16001272号-2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-v cebianlan"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="JS/swiper.min.js"></script>
+	<script type="text/javascript" src="JS/swiper.animate1.0.2.min.js"></script>
+	<script type="text/javascript" src="JS/lazyload.js" ></script>
+	<script>
+//		显示隐藏侧边栏
+		$('.chahao').click(function(){
+			$('.fix').fadeToggle(200);
+		})
+//		图片懒加载
+		$("img").lazyload({
+			placeholder : "IMG/nongyeyinhang.png",//设置占位图片
+			effect: "fadeIn",//设置图片出现方式
+			threshold: 200,//设置距离图片的高度
+			event: 'sporty',//设置什么事件触发这个效果
+		});
+//		背景图片懒加载
+		$(".od").lazyload({
+//			placeholder : "IMG/nongyeyinhang.png",//设置占位图片
+			effect: "fadeIn",//设置图片出现方式
+			threshold: 200,//设置距离图片的高度
+			event: 'sporty',//设置什么事件触发这个效果
+			failurelimit : 10,
+		});
+//		第五屏hove效果
+		$('.wenben').hover(function(){
+			$('.huan').css('display','none').eq($(this).index()).css('display','block');
+		})
+		// 第二 ,三屏效果动画   
+		$('.fen_san').hover(function() {
+				$('.fen_san_sha').eq($(this).index()).stop(false, true).slideDown(500);
+				$('.fen_san_xia').eq($(this).index()).css('color', 'black')
+			}, function() {
+				$('.fen_san_sha').eq($(this).index()).stop(false, true).slideUp(500);
+				$('.fen_san_xia').eq($(this).index()).css('color', 'white')
+			})
+			//导航栏点击效果     对应整体屏幕 
+		$('.zhong>ul>li').click(function() {
+			w_num = $(this).index();
+			$(this).parents('.zhong').find('.duan').eq(w_num).css('background', '#00dfb8').siblings()
+				.css('background', 'transparent');
+			$('.zhong>ul>li').css('color', 'white').eq($(this).index()).css('color', '#00dfb8');
+			swiperV.slideTo($(this).index(), 500, function(swiper) {
+				swiperAnimate(swiper);
+			});
+		});
+//		小尺寸导航点击效果   菜单横线动画  以及显示隐藏菜单栏
+		var falg = true;
+		$('.caidanhengxain').click(function() {
+			if (falg) {
+				$('.nav').stop(false, true).slideDown(300);
+				$('.huangxian').eq(0).css({'transform':'rotateZ(45deg)','width':'45px'});
+				$('.huangxian').eq(1).css('display', 'none');
+				$('.huangxian').eq(2).css({'transform':'rotateZ(-45deg)','width':'45px'});
+			} else {
+				$('.nav').stop(false, true).slideUp(300);
+				$('.huangxian').eq(0).css({'transform':'rotateZ(0)','width':''});
+				$('.huangxian').eq(1).css('display', 'block');
+				$('.huangxian').eq(2).css({'transform':'rotateZ(0)','width':''});
+			}
+			falg = !falg;
+		})
+		//		小尺寸导航子集点击效果    
+		$('.nav li').click(function() {
+			swiperV.slideTo($(this).index(), 500,function(swiper){
+				swiperAnimate(swiper);
+			});
+		});
+			//上下点击翻页效果
+		$('.fix li').eq(0).click(function() {
+			swiperV.slidePrev();
+		})
+		$('.fix li').eq(4).click(function() {
+			swiperV.slideNext();
+		})
+//		swiper必要添加的js
+//      横屏
+		var swiperH = new Swiper('.swiper-container-h', {
+			pagination: '.swiper-pagination-h',//控制方向
+//			loop: true,//循环播放
+			paginationClickable: true, //分页符点击事件
+			nextButton: '.swiper-button-next', //左右按钮
+			prevButton: '.swiper-button-prev',
+			onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+				swiperAnimateCache(swiper); //隐藏动画元素 
+				swiperAnimate(swiper); //初始化完成开始动画
+			},
+			onSlideChangeEnd: function(swiper) {
+				swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			},
+		});
+//		竖屏
+		var swiperV = new Swiper('.swiper-container-v', {
+			pagination: '.swiper-pagination-v', //控制方向
+			paginationClickable: true,//分页符点击事件
+			direction: 'vertical',//控制横向竖向
+			paginationClickable: true,
+			mousewheelControl: true,//鼠标滚轮控制上下滚动
+//			zoom : true,//双击放大缩小图片
+			onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+				swiperAnimateCache(swiper); //隐藏动画元素 
+				swiperAnimate(swiper); //初始化完成开始动画
+			},
+			onSlideChangeEnd: function(swiper) {
+				swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			},
+		});
+	</script>
+
+</html>
